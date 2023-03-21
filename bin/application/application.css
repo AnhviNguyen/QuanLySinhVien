@@ -1,0 +1,25 @@
+.left_form {
+	-fx-background-color: linear-gradient(to bottom right,#fc466b,#3f5efb );
+}
+
+.login_btn {
+	-fx-background-color: linear-gradient(to bottom right,#7474bf,#348ac7 );
+	-fx-text-fill: #fff;
+	-fx-font-size: 25px;
+}
+
+.login_btn:hover {
+	-fx-background-color: linear-gradient(to bottom right,#9898f1,#5ab5ee );
+}
+
+.close {
+	-fx-background-color: #fff;
+	-fx-text-fill:#0d0d0d;
+	-fx-font-size: 20px;
+}
+
+.close:hover{
+	-fx-background-color: #9d0808;
+	-fx-text-fill:#fff;
+}
+

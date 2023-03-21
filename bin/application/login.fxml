@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.loginController">
+   <children>
+      <AnchorPane fx:id="mainForm" prefHeight="700.0" prefWidth="1100.0">
+         <children>
+            <AnchorPane prefHeight="700.0" prefWidth="550.0" styleClass="left_form" stylesheets="@application.css">
+               <children>
+                  <ImageView fitHeight="301.0" fitWidth="424.0" layoutX="69.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../OneDrive/Pictures/Saved%20Pictures/logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="62.0" layoutY="442.0" text="Student Managment System" textFill="WHITE">
+                     <font>
+                        <Font name="Tahoma Bold" size="32.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+            <AnchorPane layoutX="550.0" prefHeight="700.0" prefWidth="550.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="170.0" layoutX="200.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../OneDrive/Documents/sql+%20java/login.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="172.0" layoutY="226.0" prefHeight="37.0" prefWidth="233.0" text="Welcome Back! " textAlignment="CENTER" textFill="#9b09ae">
+                     <font>
+                        <Font name="Tahoma Bold" size="29.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="username" layoutX="200.0" layoutY="300.0" onAction="#loginAdmin" prefHeight="50.0" prefWidth="300.0" promptText="Username" styleClass="textField" stylesheets="@dashboardDesign.css" />
+                  <PasswordField fx:id="password" layoutX="200.0" layoutY="396.0" onAction="#loginAdmin" prefHeight="50.0" prefWidth="300.0" promptText="Password" styleClass="textField" stylesheets="@dashboardDesign.css" />
+                  <Label layoutX="44.0" layoutY="300.0" prefHeight="50.0" prefWidth="130.0" text="Username: ">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="51.0" layoutY="403.0" text="Password: ">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="loginButton" layoutX="52.0" layoutY="478.0" mnemonicParsing="false" onAction="#loginAdmin" prefHeight="50.0" prefWidth="448.0" styleClass="login_btn" stylesheets="@application.css" text="Login" textFill="#5ab5ee" />
+                  <Button fx:id="close" layoutX="482.0" mnemonicParsing="false" onAction="#Close" prefHeight="33.0" prefWidth="68.0" styleClass="close" stylesheets="@dashboardDesign.css" text="x" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
